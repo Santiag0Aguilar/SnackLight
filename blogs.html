@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackLight</title>
+    <link rel="stylesheet" href="build/css/index.css" />
+    <link
+      rel="icon"
+      href="build/icons/cheese-1-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <header class="HeaderSinBg">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="Header_Top content"
+      >
+        <a href="index.html">
+          <p class="Logo">Snack<span>Light</span></p>
+        </a>
+        <div class="mobileversion">
+          <img src="build/images/barras.svg" alt="Barras" />
+        </div>
+        <div class="DarkModeAndNav">
+          <img
+            class="dark-mode"
+            src="build/images/dark-mode.svg"
+            alt="dark-mode"
+          />
+          <nav class="Header__Nav">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blogs.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="SeccionBlogs">
+      <h3>Nuestros blogs</h3>
+      <div class="Articulos content">
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
+          <div class="Articulo">
+            <img src="build/images/header.jpg" alt="Lampara 1" />
+            <div class="Blog__Texto">
+              <h4 class="Blog__Tittle">
+                Queso Manchego: sabor español con historia
+              </h4>
+              <p>
+                Escrito el:
+                <span class="meta-dato2" id="fecha-actual"></span> por:
+                <span class="meta-dato2">Juan</span>
+              </p>
+              <p>
+                Originario de La Mancha, este queso de oveja destaca por su
+                textura firme y sabor intenso.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
+          <div class="Articulo">
+            <img src="build/images/cheeseTable.jpg" alt="Lampara 1" />
+            <div class="Blog__Texto">
+              <h4 class="Blog__Tittle">
+                Queso Oaxaca: el favorito para derretir
+              </h4>
+              <p>
+                Escrito el:
+                <span class="meta-dato2" id="fecha-actual"></span> por:
+                <span class="meta-dato2">Juan</span>
+              </p>
+              <p>
+                Conocido por su forma trenzada y textura elástica, es ideal para
+                quesadillas y platillos mexicanos.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
+          <div class="Articulo">
+            <img src="build/images/5.jpg" alt="Lampara 3" />
+            <div class="Blog__Texto">
+              <h4 class="Blog__Tittle">Queso Brie: cremoso y elegante</h4>
+              <p>
+                Escrito el:
+                <span class="meta-dato2" id="fecha-actual"></span> por:
+                <span class="meta-dato2">Juan</span>
+              </p>
+              <p>
+                De origen francés, su textura suave y corteza blanca lo hacen
+                ideal para tablas gourmet.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
+          <div class="Articulo">
+            <img src="build/images/4.jpg" alt="Lampara 1" />
+            <div class="Blog__Texto">
+              <h4 class="Blog__Tittle">Queso Azul: fuerte y atrevido</h4>
+              <p>
+                Escrito el:
+                <span class="meta-dato2" id="fecha-actual"></span> por:
+                <span class="meta-dato2">Juan</span>
+              </p>
+
+              <p>
+                Con vetas de moho azul, es un queso de sabor intenso que combina
+                bien con frutas y vino.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content">
+        <nav class="Header__Nav">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blogs.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>SnackLight &copy;</p>
+      </div>
+    </footer>
+
+    <script src="build/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

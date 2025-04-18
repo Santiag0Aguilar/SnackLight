@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackLight</title>
+    <link rel="stylesheet" href="build/css/index.css" />
+    <link
+      rel="icon"
+      href="build/icons/cheese-1-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <header class="HeaderSinBg">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="Header_Top content"
+      >
+        <a href="index.html">
+          <p class="Logo">Snack<span>Light</span></p>
+        </a>
+        <div class="mobileversion">
+          <img src="build/images/barras.svg" alt="Barras" />
+        </div>
+        <div class="DarkModeAndNav">
+          <img
+            class="dark-mode"
+            src="build/images/dark-mode.svg"
+            alt="dark-mode"
+          />
+          <nav class="Header__Nav">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blogs.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      class="content NosotrosContent"
+    >
+      <h1>Conoce sobre Nosotros</h1>
+
+      <div class="Nosotros">
+        <div class="Nosotros__imagen">
+          <img src="build/images/cheeseTable.jpg" alt="Candles" />
+        </div>
+        <div class="Nosotros__Info">
+          <h4>Primer año en el mercado</h4>
+          <p>
+            En Snacklight celebramos el legado y la calidad del auténtico queso
+            Oaxaca, también conocido como quesillo. Originario de Reyes Etla,
+            Oaxaca, este queso nació de un accidente culinario en 1885 y hoy es
+            reconocido como uno de los cinco mejores quesos del mundo. Su
+            textura única y su capacidad para fundirse lo han convertido en el
+            favorito de la gastronomía mexicana, ideal para quesadillas,
+            tlayudas y mucho más. En Snacklight, nos enorgullece ofrecer quesos
+            que preservan esta historia, elaborados con procesos tradicionales y
+            sabor auténtico. Creemos en compartir cultura a través del sabor,
+            manteniendo la calidad, el orgullo regional y el compromiso con
+            productos que representan lo mejor de México.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section
+      data-aos="zoom-in-down"
+      data-aos-duration="2000"
+      class="Nosotros content"
+    >
+      <h2>Mas sobre SnackLight</h2>
+
+      <div class="Nosotros__Informcion">
+        <div class="Nosotros_ContenedorInfo">
+          <img src="build/images/icono1.svg" alt="Icono uno" />
+          <h3>Compra segura</h3>
+          <p>
+            En SnackLight, tu confianza es esencial. Cada compra está respaldada
+            por métodos de pago seguros y un compromiso firme con la calidad.
+            Nos esforzamos por ofrecerte una experiencia sin preocupaciones, con
+            atención personalizada y la garantía de que disfrutarás de un
+            producto auténtico, delicioso y nutritivo.
+          </p>
+        </div>
+        <div class="Nosotros_ContenedorInfo">
+          <img src="build/images/icono2.svg" alt="Icono dos" />
+          <h3>Economico</h3>
+
+          <p>
+            Valoramos nuestras raíces y trabajamos con comunidades productoras
+            para fomentar la economía local. Cada queso es fruto del esfuerzo
+            colectivo, preservando las tradiciones, respetando el entorno y
+            contribuyendo al desarrollo sostenible del campo mexicano.
+          </p>
+        </div>
+        <div class="Nosotros_ContenedorInfo">
+          <img src="build/images/icono3.svg" alt="Icono tres" />
+          <h3>a tiempo</h3>
+
+          <p>
+            Entendemos que mereces lo mejor sin demoras. Por eso, garantizamos
+            entregas puntuales, con procesos logísticos eficientes que aseguran
+            que tu queso llegue fresco, en perfectas condiciones y listo para
+            disfrutarse, directo de nuestras manos a tu mesa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ubicacion content"
+      data-aos="flip-up"
+      data-aos-duration="1000"
+    >
+      <h2>Nuestra ubicacion</h2>
+
+      <div id="map" style="height: 400px; width: 100%"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <nav class="Header__Nav">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncio.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>SnackLight &copy;</p>
+      </div>
+    </footer>
+
+    <script src="build/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

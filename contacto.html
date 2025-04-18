@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnackLight</title>
+    <link rel="stylesheet" href="build/css/index.css" />
+    <link
+      rel="icon"
+      href="build/icons/cheese-1-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+  <body>
+    <header class="HeaderSinBg">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="Header_Top content"
+      >
+        <a href="index.html">
+          <p class="Logo">Snack<span>Light</span></p>
+        </a>
+        <div class="mobileversion">
+          <img src="build/images/barras.svg" alt="Barras" />
+        </div>
+        <div class="DarkModeAndNav">
+          <img
+            class="dark-mode"
+            src="build/images/dark-mode.svg"
+            alt="dark-mode"
+          />
+          <nav class="Header__Nav">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blogs.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main data-aos="fade-up" data-aos-duration="2000" class="Contacto content">
+      <h1>Contacto</h1>
+
+      <img src="build/images/cheeseTable.jpg" alt="Stand" />
+      <h3>Formulario de contacto</h3>
+
+      <form class="Formulario__Contacto">
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Tu Nombre" id="nombre" />
+
+          <label for="email">E-mail</label>
+          <input type="email" placeholder="Tu Email" id="email" />
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" placeholder="Tu Teléfono" id="telefono" />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje"></textarea>
+        </fieldset>
+        <input class="Boton-2" type="submit" value="Enviar" />
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="content">
+        <nav class="Header__Nav">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncio.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>SnackLight &copy;</p>
+      </div>
+    </footer>
+
+    <script src="build/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
